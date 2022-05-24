@@ -21,3 +21,6 @@ void bfs(vector<vector<int>> graph) {
     }
 }
 ```
+
+## Tip
+- BFS를 이용하여 레벨의 깊이를 구할 때는 ```C while(!que.empty()) ``` 조건 외에도 ```C for (int i = 0; i < len; i++) ``` 조건을 이용해 한 레벨마다 depth를 1씩 증가 시켜줘야 한다
