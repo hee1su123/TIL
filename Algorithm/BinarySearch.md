@@ -4,7 +4,7 @@
 - log2(1억) = 26.xxx
 
 ## Binary Search 구현
-
+- 재귀 함수를 이용한 구현
 ```C
     int binarySearch(vector<int> &nums, int target, int start, int end) {
         if (start > end)
@@ -19,4 +19,25 @@
         else
             return mid;
     }
+```
+
+- 반복문을 이용한 구현
+```C
+int binarySearch(int arr[], int target) {
+    int low = 0;
+    int high = arr.length - 1;
+    int mid;
+
+    while(low <= high) {
+        mid = (low + high) / 2;
+
+        if (arr[mid] == target)
+            return mid;
+        else if (arr[mid] > target)
+            high = mid - 1;
+        else
+            low = mid + 1;
+    }
+    return -1;
+}
 ```
