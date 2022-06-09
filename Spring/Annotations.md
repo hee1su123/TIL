@@ -1,4 +1,4 @@
-## Annotations
+## SpringFramework Annotations
 
 ### @Around
 
@@ -25,3 +25,35 @@
 ### @Transactional
 - 테스트 코드에 붙은 경우, 서비스 등에 붙은 경우 다른 기능을 보여줌
 - JPA를 사용하는경우 꼭 필요한 어노테이션. JPA는 @Transactional 어노테이션 안에서만 작동한다
+
+## Jpa Annotations
+
+### @Column
+- 컬럼 매핑
+- 속성
+    - name: 필드와 매핑할 테이블의 컬럼 이름 / 기본값 객체의 필드 이름
+    - insertable, updatable: 등록, 변경 가능 여부 / 기본값 TRUE
+    - nullable(DDL): null 값의 허용 여부를 설정. false로 설정 시 DDL 생성 시에 not null 제약조건이 붙는다. 
+    - unique(DDL): @Table의 uniqueConstraints와 같지만 한 컬럼에 간단히 유니크 제약조건을 걸 때 사용한다.
+    - length(DDL): 문자 길이 제약조건, String타입에만 사용 / 기본값 255
+    - columnDefinition(DDL): 데이터베이스 컬럼 정보를 직접 줄 수 있다
+        - ex) varchar(100) default 'EMPTY'
+    - precision, scale(DDL): BigDecimal 타입에서 사용한다(BigInteger도 사용할 수 있다). precision은 소수점을 포함한 전체 자릿수를, scale은 소수의 자릿수다. 참고로 double, float 타입에는 적용되지 않는다. 아주 큰 숫자나 정밀한 소수를 다루어야 할 때만 사용한다 / 기본값 precision=19, scale=2
+
+### @Temporal
+- 날짜 타입 매핑(자바8 부터 LocalDate, LocalDateTime 지원)
+
+### @Enumerated
+- enum 매핑
+- 속성 
+    - EnumType.ORDINAL: enum 순서를 저장(기본값)
+    - EnumType.STRING: enum 이름을 저장
+    - ORDINAL 사용시 매우 위험함. 처음 0번으로 저장되면 나중에 해당 값이 1이 되어도 데이터베이스에는 그대로 0으로 저장되어 있어 혼란을 가져옴.
+
+### @Lob
+- Lob: 가변의 길이를 갖는 큰 데이터를 저장하는데 사용되는 데이터형
+- @Lob: 일반적인 데이터베이스에서 저장하는 길이인 255개 이상의 문자를 저장하고 싶을 때 지정
+- BLOB, CLOB 매핑
+
+### @Transient
+- 특정 필드를 컬럼에 매핑하지 않음
