@@ -53,7 +53,21 @@
 ### @Lob
 - Lob: 가변의 길이를 갖는 큰 데이터를 저장하는데 사용되는 데이터형
 - @Lob: 일반적인 데이터베이스에서 저장하는 길이인 255개 이상의 문자를 저장하고 싶을 때 지정
-- BLOB, CLOB 매핑
+    - BLOB: byte[], java.sql.BLOB
+    - CLOB: String, char[], java.sql.CLOB
 
 ### @Transient
 - 특정 필드를 컬럼에 매핑하지 않음
+
+### @Id
+- 기본키 직접 할당
+
+### @GenartedValue
+- 기본키 자동 생성
+- 종류
+- IDENTITY: 데이터베이스에 위임(다른 데이터베이스를 사용하면 다른 방법으로 생성됨)
+    - Jpa는 커밋 시점에서 INSERT SQL 을 실행하므로 AUTO_INCREMENT는 데이터베이스에 INSERT SQL 을 실행하기 전까지는 ID 값을 알 수 없다. 이를 해결하기 이해 보통의 경우와 달리 em.persist() 실행 시 예외적으로 INSERT SQL을 실행하여 ID 값을 받아온다.
+- SEQUENCE: 유일한 값을 순서대로 생성하는 특별한 데이텁이스 오브젝트
+    - allocationSize 기본값 50: 위의 IDENTITY 와 비슷하게 DB를 호출하여 SEQUENCE에서 ID 값을 받아오기 전까지는 ID 값을 알 수 없다. 이를 해결하기 위해 값을 50씩 올려 DB를 호출하지 않고 메모리에서 값을 증가 시켜 ID 값을 받고, 50을 넘을때 한번 더 호출하여 50개를 더 받아온다.
+- TABLE: 키 생성 전용 테이븡를 만들어서 시퀀스를 흉내내는 전략. 모든 데이터베이스에 적용 가능하지만 성능이 좋지 않음
+- AUTO
