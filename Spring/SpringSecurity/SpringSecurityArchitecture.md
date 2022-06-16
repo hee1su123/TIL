@@ -1,6 +1,6 @@
 ## SpringSecurity Architecture
 
-[image of spring security architecture](../../Image/SpringSecurity/SpringSecurityArchitecture.png)
+![image of spring security architecture](../../Image/SpringSecurity/SpringSecurityArchitecture.png)
 <br></br>
 
 ### AuthenticationFilter
