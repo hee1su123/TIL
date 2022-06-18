@@ -1,5 +1,6 @@
 # TIL
-(ctrl+F 눌러서 검색)
+Today I learned  
+공부한 내용 정리
 <details>
 <summary>Algorithm</summary>
 
@@ -81,14 +82,46 @@
 <summary>Network</summary>
 
 - [API](./Network/API.md)
-- [Cookie](./Network/Cookie.md)
+- [Cookie&Session](./Network/Cookie_Session.md)
 - [CORS](./Network/CORS.md)
 - [JWT](./Network/JWT.md)
 - [XSS_CSRF](./Network/XSS_CSRF.md)
 </details>
 
 <details>
-<summary>Spring</summary>
+<summary>OS</summary>
 
 - []()
+</details>
+
+
+<details>
+<summary>Spring</summary>
+
+<details>
+<summary>JPA</summary>
+
+- [Jpa_Data_Delete](./Spring/JPA/Jpa_Data_Delete.md)
+- [Jpa_Relation](./Spring/JPA/Jpa_Relation.md)
+- [JPA](./Spring/JPA/JPA.md)
+</details>
+
+<details>
+<summary>SpringSecurity</summary>
+
+- [Authentication_Authorization](./Spring/SpringSecurity/Authentication%26Authorization.md)
+- [SpringSecurityArchitecture](./Spring/SpringSecurity/SpringSecurityArchitecture.md)
+</details>
+
+- [AOP](./Spring/AOP.md)
+- [DI](./Spring/DI.md)
+- [Springboot](./Spring/Spring%26SpringBoot.md)
+- [Validation&Error](./Spring/Validation%26ErrorCheck.md)
+</details>
+
+<details>
+<summary>TroubleShooting</summary>
+
+- [Dto_DI](./TroubleShooting/Dto_Dependency_Injection_Fail.md)
+- [JpaInfinityLoop](./TroubleShooting/JPA_Relation_Infinity_Loop.md)
 </details>
