@@ -7,13 +7,13 @@ Today I learned
 - [BackTracking](./Algorithm/BackTracking.md)
 - [BFS](./Algorithm/BFS.md)
 - [Big-O](./Algorithm/Big-O.md)
-- [BinarySearch](./Algorithm/BinarySearch.md)
-- [BinarySearchTree](./Algorithm/BinarySearchTree.md)
-- [BinaryTree](./Algorithm/BinaryTree.md)
+- [Binary Search](./Algorithm/BinarySearch.md)
+- [Binary Search Tree](./Algorithm/BinarySearchTree.md)
+- [Binary Tree](./Algorithm/BinaryTree.md)
 - [DFS](./Algorithm/DFS.md)
 - [Graph](./Algorithm/Graph.md)
-- [HashTable](./Algorithm/HashTable.md)
-- [LinkedList](./Algorithm/LinkedList.md)
+- [Hash Table](./Algorithm/HashTable.md)
+- [Linked List](./Algorithm/LinkedList.md)
 - [Queue](./Algorithm/Queue.md)
 - [Bubblesort](./Algorithm/Sort-Bubblesort.md)
 - [Heapsort](./Algorithm/Sort-Heapsort.md)
@@ -73,8 +73,9 @@ Today I learned
 <details>
 <summary>Java</summary>
 
-- [InterfaceVsAbstract](./Java/InterfaceVsAbstract.md)
-- [LambdaExpression](./Java/LambdaExpression.md)
+- [Framework & Library](./Java/Framework%26Library.md)
+- [Interface Vs Abstract](./Java/InterfaceVsAbstract.md)
+- [Lambda Expression](./Java/LambdaExpression.md)
 - [super](./Java/super.md)
 </details>
 
@@ -82,10 +83,10 @@ Today I learned
 <summary>Network</summary>
 
 - [API](./Network/API.md)
-- [Cookie&Session](./Network/Cookie_Session.md)
+- [Cookie & Session](./Network/Cookie_Session.md)
 - [CORS](./Network/CORS.md)
 - [JWT](./Network/JWT.md)
-- [XSS_CSRF](./Network/XSS_CSRF.md)
+- [XSS & CSRF](./Network/XSS_CSRF.md)
 </details>
 
 <details>
@@ -101,27 +102,27 @@ Today I learned
 <details>
 <summary>JPA</summary>
 
-- [Jpa_Data_Delete](./Spring/JPA/Jpa_Data_Delete.md)
-- [Jpa_Relation](./Spring/JPA/Jpa_Relation.md)
+- [Jpa Data Delete](./Spring/JPA/Jpa_Data_Delete.md)
+- [Jpa Relation](./Spring/JPA/Jpa_Relation.md)
 - [JPA](./Spring/JPA/JPA.md)
 </details>
 
 <details>
 <summary>SpringSecurity</summary>
 
-- [Authentication_Authorization](./Spring/SpringSecurity/Authentication%26Authorization.md)
-- [SpringSecurityArchitecture](./Spring/SpringSecurity/SpringSecurityArchitecture.md)
+- [Authentication & Authorization](./Spring/SpringSecurity/Authentication%26Authorization.md)
+- [Spring Security Architecture](./Spring/SpringSecurity/SpringSecurityArchitecture.md)
 </details>
 
 - [AOP](./Spring/AOP.md)
 - [DI](./Spring/DI.md)
 - [Springboot](./Spring/Spring%26SpringBoot.md)
-- [Validation&Error](./Spring/Validation%26ErrorCheck.md)
+- [Validation & Error](./Spring/Validation%26ErrorCheck.md)
 </details>
 
 <details>
 <summary>TroubleShooting</summary>
 
-- [Dto_DI](./TroubleShooting/Dto_Dependency_Injection_Fail.md)
+- [Dto DI](./TroubleShooting/Dto_Dependency_Injection_Fail.md)
 - [JpaInfinityLoop](./TroubleShooting/JPA_Relation_Infinity_Loop.md)
 </details>
