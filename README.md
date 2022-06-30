@@ -62,6 +62,7 @@ Today I learned
 <summary>Gof</summary>
 
 - [Builder](./GoF/Builder.md)
+- [Singletone](./Gof/Singletone.md)
 </details>
 
 <details>
@@ -76,6 +77,7 @@ Today I learned
 - [Framework & Library](./Java/Framework%26Library.md)
 - [Interface Vs Abstract](./Java/InterfaceVsAbstract.md)
 - [Lambda Expression](./Java/LambdaExpression.md)
+- [Stream](./Java/Stream.md)
 - [super](./Java/super.md)
 </details>
 
@@ -124,5 +126,7 @@ Today I learned
 <summary>TroubleShooting</summary>
 
 - [Dto DI](./TroubleShooting/Dto_Dependency_Injection_Fail.md)
+- [Jpa delte query not being executed](./TroubleShooting/JPA_Delete_Fail.md)
 - [JpaInfinityLoop](./TroubleShooting/JPA_Relation_Infinity_Loop.md)
+- [Test Code "Strict stubbing argument mismatch"](./TroubleShooting/Test_Strict_stubbing_argument_mismatch.md)
 </details>
