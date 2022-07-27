@@ -143,6 +143,7 @@ Today I learned
 - [Dto DI](./TroubleShooting/Dto_Dependency_Injection_Fail.md)
 - [Jpa delte query not being executed](./TroubleShooting/JPA_Delete_Fail.md)
 - [Jpa Infinity Loop](./TroubleShooting/JPA_Relation_Infinity_Loop.md)
+- [Lazy Exception](./TroubleShooting/Lazy_Exception.md)
 - [Multiple Chat Message Error](./TroubleShooting/Multiple_Chat_Error.md)
 - [Multiple Content Types in ResponseEntity\<ResponseDto\>](./TroubleShooting/Multiple_Content_Type_in_ResponseDto.md)
 - [Recieving Form Data From Controller](./TroubleShooting/Receiving_Form_Data_From_Controller.md)
