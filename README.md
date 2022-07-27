@@ -44,6 +44,7 @@ Today I learned
 <summary>DB</summary>
 
 - [Normalization](./DB/Database_Normalization.md)
+- [Redis vs RDBMS](./DB/RedisVsRdbms.md)
 </details>
 
 <details>
@@ -115,6 +116,7 @@ Today I learned
 - [Jpa Data Delete](./Spring/JPA/Jpa_Data_Delete.md)
 - [Jpa Relation](./Spring/JPA/Jpa_Relation.md)
 - [JPA](./Spring/JPA/JPA.md)
+- [N+1 문제](./Spring/JPA/N%2B1.md)
 </details>
 
 <details>
@@ -141,6 +143,7 @@ Today I learned
 - [Dto DI](./TroubleShooting/Dto_Dependency_Injection_Fail.md)
 - [Jpa delte query not being executed](./TroubleShooting/JPA_Delete_Fail.md)
 - [Jpa Infinity Loop](./TroubleShooting/JPA_Relation_Infinity_Loop.md)
+- [Multiple Chat Message Error](./TroubleShooting/Multiple_Chat_Error.md)
 - [Multiple Content Types in ResponseEntity\<ResponseDto\>](./TroubleShooting/Multiple_Content_Type_in_ResponseDto.md)
 - [Recieving Form Data From Controller](./TroubleShooting/Receiving_Form_Data_From_Controller.md)
 - [RequestDto Getters and Setters](./TroubleShooting/RequestDto_Getter_Setter.md)
