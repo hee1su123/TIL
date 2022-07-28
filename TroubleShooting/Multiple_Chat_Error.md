@@ -67,7 +67,7 @@ public class ChatMessageService {
 ```
 - 위의 ```redisPub.publish()``` 함수는 실행 시 ```redisTemplate.convertAndSend()``` 함수를 실행하여 ```onMessage()``` 함수로 메세지를 보낸다. 기존에 메세지를 저장하던 위치에서 위의 메서드로 위치를 바꿔주어 DB 에 메세지가 두번 저장되는 것을 해결했다.
 
-## 배운점
+## 결론
 - 서버가 여러대 늘어나게 되면서 고민해야 할 내용이 더 많아 지는 것 같다.
 - Redis 의 Publish 를 어느 서버에서 접속하여 진행하든, 모든 서버의 onMessage 로 해당 메세지가 전송된다. 같은 Redis 서버를 이용하기 때문인 것으로 추정된다.
 
