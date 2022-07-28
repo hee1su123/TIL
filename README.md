@@ -149,5 +149,5 @@ Today I learned
 - [Recieving Form Data From Controller](./TroubleShooting/Receiving_Form_Data_From_Controller.md)
 - [RequestDto Getters and Setters](./TroubleShooting/RequestDto_Getter_Setter.md)
 - [Test Code "Strict stubbing argument mismatch"](./TroubleShooting/Test_Strict_stubbing_argument_mismatch.md)
-- [Websocket and Jwt Authorization](./TroubleShooting/WebSocket_And_Security.md)
+- [Websocket and Jwt Authentication](./TroubleShooting/WebSocket_And_Security.md)
 </details>
