@@ -1,8 +1,8 @@
 ## 문제 발생
-Socket Disconnect 의 경우 Front-end 에서 헤더에 값을 넣어서 Disconnect 를 실행 하면 누가 Disconnect  를 실행 했는지 알 수 있지만, 강제 종료된 경우 유저정보를 알 수 없다.
+STOMP Disconnect 의 경우 Front-end 에서 헤더에 값을 넣어서 Disconnect 를 실행 하면 누가 Disconnect  를 실행 했는지 알 수 있지만, 강제 종료된 경우 유저정보를 알 수 없다.
 
 ## 발생 원인
-일반적인 Socket Disconnect 의 경우 Front-end 에서 헤더에 값을 넣어서 Disconnect 를 실행 하면 누가 Disconnect  를 실행 했는지 알 수 있지만, 강제 종료된 경우 유저정보를 알 수 없다.
+일반적인 STOMP Disconnect 의 경우 Front-end 에서 헤더에 값을 넣어서 Disconnect 를 실행 하면 누가 Disconnect  를 실행 했는지 알 수 있지만, 강제 종료된 경우 유저정보를 알 수 없다.
 
 ## 해결 방안
 ```C
