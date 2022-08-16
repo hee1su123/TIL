@@ -38,6 +38,7 @@ Today I learned
 - [binary_search](./C%2B%2B/binary_search.md)
 - [heapsort](./C%2B%2B/heapsort.md)
 - [priority_queue](./C%2B%2B/priority_queue.md)
+- [substr function speed](./C%2B%2B/speed_substr.md)
 </details>
 
 <details>
