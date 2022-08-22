@@ -4,24 +4,30 @@ Today I learned
 <details>
 <summary>Algorithm</summary>
 
-- [BackTracking](./Algorithm/BackTracking.md)
-- [BFS](./Algorithm/BFS.md)
-- [Big-O](./Algorithm/Big-O.md)
-- [Binary Search](./Algorithm/BinarySearch.md)
-- [Binary Search Tree](./Algorithm/BinarySearchTree.md)
-- [Binary Tree](./Algorithm/BinaryTree.md)
-- [DFS](./Algorithm/DFS.md)
-- [Graph](./Algorithm/Graph.md)
-- [Hash Table](./Algorithm/HashTable.md)
-- [Linked List](./Algorithm/LinkedList.md)
-- [Queue](./Algorithm/Queue.md)
-- [Bubblesort](./Algorithm/Sort-Bubblesort.md)
-- [Heapsort](./Algorithm/Sort-Heapsort.md)
-- [Insertionsort](./Algorithm/Sort-Insertionsort.md)
-- [Mergesort](./Algorithm/Sort-Mergesort.md)
-- [Quiksort](./Algorithm/Sort-Quiksort.md)
-- [Selectionsort](./Algorithm/Sort-Selectionsort.md)
-- [Stack](./Algorithm/Stack.md)
+<details>
+<summary>Category</summary>
+
+- [BackTracking](./Algorithm/Category/BackTracking.md)
+- [BFS](./Algorithm/Category/BFS.md)
+- [Big-O](./Algorithm/Category/Big-O.md)
+- [Binary Search](./Algorithm/Category/BinarySearch.md)
+- [Binary Search Tree](./Algorithm/Category/BinarySearchTree.md)
+- [Binary Tree](./Algorithm/Category/BinaryTree.md)
+- [DFS](./Algorithm/Category/DFS.md)
+- [Graph](./Algorithm/Category/Graph.md)
+- [Hash Table](./Algorithm/Category/HashTable.md)
+- [Linked List](./Algorithm/Category/LinkedList.md)
+- [Queue](./Algorithm/Category/Queue.md)
+- [Bubblesort](./Algorithm/Category/Sort-Bubblesort.md)
+- [Heapsort](./Algorithm/Category/Sort-Heapsort.md)
+- [Insertionsort](./Algorithm/Category/Sort-Insertionsort.md)
+- [Mergesort](./Algorithm/Category/Sort-Mergesort.md)
+- [Quiksort](./Algorithm/Category/Sort-Quiksort.md)
+- [Selectionsort](./Algorithm/Category/Sort-Selectionsort.md)
+- [Stack](./Algorithm/Category/Stack.md)
+</details>
+
+- [N-Queen](./Algorithm/N_Queen.md)
 </details>
 
 <details>
