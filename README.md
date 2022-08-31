@@ -50,6 +50,14 @@ Today I learned
 <details>
 <summary>DB</summary>
 
+<details>
+<summary>SQL</summary>
+
+- [DDL](.DB/SQL/DDL.md)
+- [DCL](.DB/SQL/DCL.md)
+- [DML](.DB/SQL/DML.md)
+</details>
+
 - [Normalization](./DB/Database_Normalization.md)
 - [Redis vs RDBMS](./DB/RedisVsRdbms.md)
 </details>
