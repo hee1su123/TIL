@@ -81,6 +81,4 @@ DROP INDEX 인덱스명 [CASCADE | RESTRICT];
 DROP CONSTRAINT 제약조건명;
 ```
 - CASCADE : 제거할 요소를 참조하는 다른 개체를 함께 제거
-- RESTRICT : 다르 ㄴ개체가 제거할 요소를 참조 중일 때는 제거를 취소
-
-### DROP
+- RESTRICT : 다른 개체가 제거할 요소를 참조 중일 때는 제거를 취소
