@@ -45,6 +45,7 @@ Today I learned
 - [heapsort](./C%2B%2B/heapsort.md)
 - [priority_queue](./C%2B%2B/priority_queue.md)
 - [substr function speed](./C%2B%2B/speed_substr.md)
+- [split function](./C%2B%2B/split.md)
 </details>
 
 <details>
