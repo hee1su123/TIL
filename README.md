@@ -164,6 +164,7 @@ Today I learned
 - [Multiple Content Types in ResponseEntity\<ResponseDto\>](./TroubleShooting/Multiple_Content_Type_in_ResponseDto.md)
 - [Recieving Form Data From Controller](./TroubleShooting/Receiving_Form_Data_From_Controller.md)
 - [RequestDto Getters and Setters](./TroubleShooting/RequestDto_Getter_Setter.md)
+- [C++ sort 함수 compare 오류](./TroubleShooting/sort_compare.md)
 - [Stomp Disconnection sessionId](./TroubleShooting/Stomp_Disconnect.md)
 - [Test Code "Strict stubbing argument mismatch"](./TroubleShooting/Test_Strict_stubbing_argument_mismatch.md)
 - [Websocket and Jwt Authentication](./TroubleShooting/WebSocket_And_Security.md)
