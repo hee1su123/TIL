@@ -27,6 +27,12 @@ Today I learned
 - [Stack](./Algorithm/Category/Stack.md)
 </details>
 
+<details>
+<summary>CodingTestExcercise</summary>
+
+- [두 큐 합 같게 만들기](./Algorithm/CodingTestExcercise/%EB%91%90%ED%81%90%ED%95%A9%EA%B0%99%EA%B2%8C%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
+</details>
+
 - [N-Queen](./Algorithm/N_Queen.md)
 </details>
 
@@ -40,13 +46,14 @@ Today I learned
 <details>
 <summary>C++</summary>
 
+- [accumulate function](./C%2B%2B/accumulate.md)
 - [assert](./C%2B%2B/assert.md)
 - [binary_search](./C%2B%2B/binary_search.md)
 - [heapsort](./C%2B%2B/heapsort.md)
 - [priority_queue](./C%2B%2B/priority_queue.md)
 - [substr function speed](./C%2B%2B/speed_substr.md)
 - [split function](./C%2B%2B/split.md)
-- [stringstream functino](./C%2B%2B/stringstream.md)
+- [stringstream function](./C%2B%2B/stringstream.md)
 </details>
 
 <details>
