@@ -32,6 +32,7 @@ Today I learned
 
 - [두 큐 합 같게 만들기](./Algorithm/CodingTestExcercise/%EB%91%90%ED%81%90%ED%95%A9%EA%B0%99%EA%B2%8C%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
 - [양궁대회](./Algorithm/CodingTestExcercise/%EC%96%91%EA%B6%81%EB%8C%80%ED%9A%8C.md)
+- [잃어버린 괄호](./Algorithm/CodingTestExcercise/%EC%9E%83%EC%96%B4%EB%B2%84%EB%A6%B0%20%EA%B4%84%ED%98%B8.md)
 - [k진수 소수 구하기](./Algorithm/CodingTestExcercise/k%EC%A7%84%EC%88%98%EC%86%8C%EC%88%98%EA%B5%AC%ED%95%98%EA%B8%B0.md)
 </details>
 
