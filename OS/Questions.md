@@ -1,0 +1,32 @@
+# Operationg System Questions
+
+- Process
+- PC(Program Counter) register
+- Process 의 메모리 영역
+- Multi Process
+- 동시성 vs 병렬성
+- 시분할 시스템
+- PCB(Process Control Block)
+- Process context
+- Context switch
+- Process state
+- Multi Thread
+- Thread 의 Stack 메모리 영역
+- (Multi) Process vs (Multi) Thread
+- IPC
+    - 공유 메모리
+    - 메시지 전달
+- 동기화 문제
+- 임계 영역
+- Mutex
+- Semaphore
+- Deadlock
+    - Deadlock 조건 4가지
+    - Deadlock 해결 4가지
+- Paging
+- Segmentation
+- 메모리 단편화
+- 가상 메모리
+- 요구 페이징
+- Page Fault
+- Page 교체 알고리즘
