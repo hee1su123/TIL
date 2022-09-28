@@ -1,6 +1,7 @@
 # sort compare 함수 오류
 - 정렬 시 compare 함수를 만들어서 사용하는 경우 나오는 오류
 
+## Case1
 ```C
 bool desc(int a, int b) {
     if (a >= b)
@@ -28,6 +29,24 @@ int main() {
 }
 ```
 - 정상적으로 실행된다
+
+## Case2
+```C
+bool compare(int a, int b) {
+    if (a > b)
+        return false;
+    return true
+}
+```
+- 실행 시 오류
+```C
+bool compare(int a, int b) {
+    if (a < b)
+        return true;
+    return false;
+}
+```
+- 정상 작동
 
 ## 이유
 - 아직 찾지 못함...
