@@ -182,5 +182,6 @@ Today I learned
 - [C++ sort 함수 compare 오류](./TroubleShooting/sort_compare.md)
 - [Stomp Disconnection sessionId](./TroubleShooting/Stomp_Disconnect.md)
 - [Test Code "Strict stubbing argument mismatch"](./TroubleShooting/Test_Strict_stubbing_argument_mismatch.md)
+- [VisualStudio 와 Boj 서버 차이](./TroubleShooting/VisualStudio_BOJ.md)
 - [Websocket and Jwt Authentication](./TroubleShooting/WebSocket_And_Security.md)
 </details>
