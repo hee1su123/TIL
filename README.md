@@ -65,6 +65,7 @@ Today I learned
   - [DDL](.DB/SQL/DDL.md)
   - [DCL](.DB/SQL/DCL.md)
   - [DML](.DB/SQL/DML.md)
+  - [SQL - DISTINCT](./DB/SQL/SQL-DISTINCT.md)
   </details></blockquote>
 
   - [Normalization](./DB/Database_Normalization.md)
