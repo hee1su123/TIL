@@ -5,7 +5,8 @@
 <br></br>
 Main
 - 복잡한 Computer 객체의 생성 단계를 ComputerFactory 에게 넘김
-```C
+
+```Java
 public class Main {
     public static void main(String[] args) {
 
@@ -29,7 +30,8 @@ ComputerFactory
 - 컴퓨터 설계도 ( Blueprint ) 를 갖고 있음
 - 설계도를 기반으로 컴퓨터를 만듬 ( setComputer )
 - 만든 컴퓨터 반환 ( getComputer )
-```C
+
+```Java
 public class ComputerFactory {
 
     private Blueprint print;
@@ -52,7 +54,7 @@ public class ComputerFactory {
 <br></br>
 
 Computer
-```C
+```Java
 public class Computer {
     private String cpu;
     private String ram;
@@ -77,7 +79,7 @@ public class Computer {
 <br></br>
 
 Blueprint ( =Abstract Builder )
-```C
+```Java
 public abstract class Blueprint {
 
     abstract public void setCpu();
@@ -91,7 +93,7 @@ public abstract class Blueprint {
 <br></br>
 
 MacBlueprint ( =Concrete Builder )
-```C
+```Java
 public class MacBlueprint extends Blueprint {
 
     private Computer computer;
@@ -131,3 +133,7 @@ public class MacBlueprint extends Blueprint {
     - Template Method Pattern 을 사용한다면, 우리는 자동차의 각 조합에 대해 하나의 클래스를 만들거나, 몇몇 좋지 않은 상속 계층을 사용해야 했다. 이러한 많은 메서드에는 중복된 코드가 포함되어 있습니다.
 
     - Builder Pattern 으로 우리는 대신 다른 부품들을 가지고 그것들을 완전한 자동차로 조합할 수 있습니다. 따라서 필요에 따라 모든 모델의 엔진을 재사용할 수 있으며 차량의 각 부품을 맞춤 제작할 수도 있습니다.
+
+
+### Reference
+- [[자바 디자인 패턴 이해] 7강 Strategy Pattern 강의](https://www.youtube.com/watch?v=UEjsbd3IZvA&t=622s)

@@ -87,6 +87,7 @@ Today I learned
 
   - [Builder](./GoF/Builder.md)
   - [Singletone](./Gof/Singletone.md)
+  - [Strategy](./GoF/Strategy.md)
 </details>
 
 <details>
