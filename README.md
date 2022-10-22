@@ -50,6 +50,7 @@ Today I learned
   - [accumulate function](./C%2B%2B/accumulate.md)
   - [assert](./C%2B%2B/assert.md)
   - [binary_search](./C%2B%2B/binary_search.md)
+  - [comparator](./C%2B%2B/comparator.md)
   - [getline()](./C%2B%2B/getline.md)
   - [heapsort](./C%2B%2B/heapsort.md)
   - [priority_queue](./C%2B%2B/priority_queue.md)
