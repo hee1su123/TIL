@@ -53,6 +53,7 @@ Today I learned
   - [comparator](./C%2B%2B/comparator.md)
   - [getline()](./C%2B%2B/getline.md)
   - [heapsort](./C%2B%2B/heapsort.md)
+  - [map erase](./C%2B%2B/map_erase.md)
   - [priority_queue](./C%2B%2B/priority_queue.md)
   - [substr function speed](./C%2B%2B/speed_substr.md)
   - [split function](./C%2B%2B/split.md)
