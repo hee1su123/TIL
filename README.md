@@ -103,7 +103,6 @@ Today I learned
 
 <details><summary>Java</summary>
 
-  - [Framework & Library](./Java/Framework%26Library.md)
   - [Interface Vs Abstract](./Java/InterfaceVsAbstract.md)
   - [Lambda Expression](./Java/LambdaExpression.md)
   - [Stream](./Java/Stream.md)
@@ -126,6 +125,8 @@ Today I learned
 
 <details><summary>Programming</summary>
 
+  - [의존성 주입 DI](./Programming/DI.md)
+  - [Framework vs Library](./Programming/Framework%26Library.md)
   - [OAuth](./Programming/OAuth.md)
   - [OOP 객체지향 프로그래밍](./Programming/OOP.md)
 </details>
@@ -152,7 +153,6 @@ Today I learned
   </details></blockquote>
 
   - [AOP](./Spring/AOP.md)
-  - [DI](./Spring/DI.md)
   - [Mapping Entities to Dtos](./Spring/Mapping_Entity_to_Dto.md)
   - [Paging and Infinity Scroll](./Spring/Paging_and_Infinity_Scroll.md)
   - [Recursive Relation](./Spring/Recursive_Relation.md)
