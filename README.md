@@ -73,7 +73,7 @@ Today I learned
   </details></blockquote>
 
   - [Normalization](./DB/Database_Normalization.md)
-  - [Redis vs RDBMS](./DB/RedisVsRdbms.md)
+  - [NoSQL vs RDBMS](./DB/RedisVsRdbms.md)
 </details>
 
 <details><summary>Docker</summary>
