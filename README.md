@@ -30,6 +30,7 @@ Today I learned
   - [가장 긴 증가하는 부분 수열2](./Algorithm/CodingTestExcercise/%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%EC%A6%9D%EA%B0%80%ED%95%98%EB%8A%94%20%EB%B6%80%EB%B6%84%20%EC%88%98%EC%97%B42.md)
   - [두 큐 합 같게 만들기](./Algorithm/CodingTestExcercise/%EB%91%90%ED%81%90%ED%95%A9%EA%B0%99%EA%B2%8C%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
   - [병합 저렬](./Algorithm/CodingTestExcercise/%EB%B3%91%ED%95%A9%EC%A0%95%EB%A0%AC.md)
+  - [보석 도둑](./Algorithm/CodingTestExcercise/%EB%B3%B4%EC%84%9D%20%EB%8F%84%EB%91%91.md)
   - [양궁대회](./Algorithm/CodingTestExcercise/%EC%96%91%EA%B6%81%EB%8C%80%ED%9A%8C.md)
   - [잃어버린 괄호](./Algorithm/CodingTestExcercise/%EC%9E%83%EC%96%B4%EB%B2%84%EB%A6%B0%20%EA%B4%84%ED%98%B8.md)
   - [재귀를 이용한 조합 구현](./Algorithm/CodingTestExcercise/%EC%A1%B0%ED%95%A9.md)
