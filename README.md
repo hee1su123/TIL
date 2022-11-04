@@ -70,6 +70,7 @@ Today I learned
   - [DDL](.DB/SQL/DDL.md)
   - [DCL](.DB/SQL/DCL.md)
   - [DML](.DB/SQL/DML.md)
+  - [SQL 정리](./DB/SQL/SQL-ALL.md)
   - [SQL - DISTINCT](./DB/SQL/SQL-DISTINCT.md)
   </details></blockquote>
 
