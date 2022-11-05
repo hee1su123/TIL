@@ -26,5 +26,45 @@ istream& getline(istream& is, string& str, char delim);
 - str : 입력받은 문자열을 저장할 string 객체
 - delim : 제한자로 이 문자에 도달시 추출 중단
 
-## 주의
-- cin.ignore() 필요성 : cin 의 경우 '\n' 을 무시하지만 getline() 은 무시하지 않음
+## std::getline 에서 cin.ignore() 필요성
+[입력값]
+```
+1
+hello
+```
+### Case1
+```C++
+int main() {
+    int n;
+    string str;
+    cin >> n;
+    getline(cin, str);
+    cout << n << ' ' << str;
+}
+```
+[출력값]  
+```
+1
+```  
+hello 를 쓰기 전에 1이 출력되면서 프로그램이 종료된다
+
+### Case2
+```C++
+int main() {
+    int n; 
+    string str;
+    cin >> n;
+    cin.ignore();
+    getline(cin, str);
+    cout << n << ' ' << str;
+}
+```
+[출력값]  
+```
+1 hello
+```
+정상적으로 출력된다
+
+## Reference
+[Cpp reference site](https://www.tutorialspoint.com/what-is-the-use-of-cin-ignore-in-cplusplus)
+[getline 블로그](https://novlog.tistory.com/78)
