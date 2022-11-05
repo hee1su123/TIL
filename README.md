@@ -53,6 +53,7 @@ Today I learned
   - [assert](./C%2B%2B/assert.md)
   - [binary_search](./C%2B%2B/binary_search.md)
   - [comparator](./C%2B%2B/comparator.md)
+  - [cout 소숫점 출력](./C%2B%2B/cout_%EC%86%8C%EC%88%98%EC%A0%90.md)
   - [getline()](./C%2B%2B/getline.md)
   - [heapsort](./C%2B%2B/heapsort.md)
   - [map erase](./C%2B%2B/map_erase.md)
