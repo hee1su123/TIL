@@ -74,6 +74,8 @@ Today I learned
   - [DML](.DB/SQL/DML.md)
   - [SQL 정리](./DB/SQL/SQL-ALL.md)
   - [SQL - DISTINCT](./DB/SQL/SQL-DISTINCT.md)
+  - [SQL - GROUP BY](./DB/SQL/SQL-GROUPBY.md)
+  - [SQL - IFNULL](./DB/SQL/SQL-IFNULL.md)
   </details></blockquote>
 
   - [Normalization](./DB/Database_Normalization.md)
