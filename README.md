@@ -40,6 +40,7 @@ Today I learned
   </details></blockquote>
 
   - [N-Queen](./Algorithm/N_Queen.md)
+  - [트리 순회](./Algorithm/Tree_Traversal.md)
 </details>
 
 <details><summary>AWS</summary>
@@ -145,6 +146,7 @@ Today I learned
   - [Framework vs Library](./Programming/Framework%26Library.md)
   - [OAuth](./Programming/OAuth.md)
   - [OOP 객체지향 프로그래밍](./Programming/OOP.md)
+  - [SI/SM](./Programming/SI_SM.md)
 </details>
 
 <details><summary>Spring</summary>
