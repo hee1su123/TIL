@@ -12,6 +12,7 @@ Today I learned
   - [Binary Search Tree](./Algorithm/Category/BinarySearchTree.md)
   - [Binary Tree](./Algorithm/Category/BinaryTree.md)
   - [DFS](./Algorithm/Category/DFS.md)
+  - [Djikstra](./Algorithm/Category/Dijkstra.md)
   - [Graph](./Algorithm/Category/Graph.md)
   - [Hash Table](./Algorithm/Category/HashTable.md)
   - [Linked List](./Algorithm/Category/LinkedList.md)
