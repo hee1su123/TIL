@@ -140,6 +140,7 @@ Today I learned
 
 <details><summary>OS</summary>
 
+  - [Kernel](./OS/Kernel.md)
   - [Questions](./OS/Questions.md)
 </details>
 
