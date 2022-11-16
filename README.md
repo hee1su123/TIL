@@ -36,6 +36,7 @@ Today I learned
   - [양궁대회](./Algorithm/CodingTestExcercise/%EC%96%91%EA%B6%81%EB%8C%80%ED%9A%8C.md)
   - [잃어버린 괄호](./Algorithm/CodingTestExcercise/%EC%9E%83%EC%96%B4%EB%B2%84%EB%A6%B0%20%EA%B4%84%ED%98%B8.md)
   - [재귀를 이용한 조합 구현](./Algorithm/CodingTestExcercise/%EC%A1%B0%ED%95%A9.md)
+  - [트리의 지름](./Algorithm/CodingTestExcercise/%ED%8A%B8%EB%A6%AC%EC%9D%98%EC%A7%80%EB%A6%84.md)
   - [피보나치 수열 구현](./Algorithm/CodingTestExcercise/%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%EC%88%98%EC%97%B4.md)
   - [k진수 소수 구하기](./Algorithm/CodingTestExcercise/k%EC%A7%84%EC%88%98%EC%86%8C%EC%88%98%EA%B5%AC%ED%95%98%EA%B8%B0.md)
   </details></blockquote>
