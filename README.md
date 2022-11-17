@@ -90,7 +90,8 @@ Today I learned
   </details></blockquote>
 
   - [Normalization](./DB/Database_Normalization.md)
-  - [NoSQL vs RDBMS](./DB/RedisVsRdbms.md)
+  - [NoSQL vs RDBMS](./DB/NoSqlVsRdbms.md)
+  - [Transaction](./DB/Transaction.md)
 </details>
 
 <details><summary>Git</summary>
