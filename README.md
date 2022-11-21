@@ -137,6 +137,7 @@ Today I learned
   - [Cookie & Session](./Network/Cookie_Session.md)
   - [CORS](./Network/CORS.md)
   - [JWT](./Network/JWT.md)
+  - [Traffic Handling](./Network/Traffic_Handling.md)
   - [XSS & CSRF](./Network/XSS_CSRF.md)
 </details>
 
