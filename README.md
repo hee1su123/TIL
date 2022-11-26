@@ -27,7 +27,7 @@ Today I learned
   - [Stack](./Algorithm/Category/Stack.md)
   </details></blockquote>
 
-  <blockquote><details><summary>CodingTestExcercise</summary>
+  <blockquote><details><summary>알고리즘 오답노트</summary>
 
   - [가장 긴 증가하는 부분 수열2](./Algorithm/CodingTestExcercise/%EA%B0%80%EC%9E%A5%20%EA%B8%B4%20%EC%A6%9D%EA%B0%80%ED%95%98%EB%8A%94%20%EB%B6%80%EB%B6%84%20%EC%88%98%EC%97%B42.md)
   - [두 큐 합 같게 만들기](./Algorithm/CodingTestExcercise/%EB%91%90%ED%81%90%ED%95%A9%EA%B0%99%EA%B2%8C%EB%A7%8C%EB%93%A4%EA%B8%B0.md)
