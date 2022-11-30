@@ -89,6 +89,7 @@ Today I learned
   - [SQL - IFNULL](./DB/SQL/SQL-IFNULL.md)
   </details></blockquote>
 
+  - [Data Integrity](./DB/Data_Integrity.md)
   - [Normalization](./DB/Database_Normalization.md)
   - [NoSQL vs RDBMS](./DB/NoSqlVsRdbms.md)
   - [Transaction](./DB/Transaction.md)
