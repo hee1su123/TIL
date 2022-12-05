@@ -137,6 +137,7 @@ Today I learned
   - [API](./Network/API.md)
   - [Cookie & Session](./Network/Cookie_Session.md)
   - [CORS](./Network/CORS.md)
+  - [IPv4, IPv6](./Network/IPv4_IPv6.md)
   - [JWT](./Network/JWT.md)
   - [Traffic Handling](./Network/Traffic_Handling.md)
   - [XSS & CSRF](./Network/XSS_CSRF.md)
