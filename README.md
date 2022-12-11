@@ -5,6 +5,7 @@ Today I learned
 
   <blockquote><details><summary>Category</summary>
 
+  - [B-Tree](./Algorithm/Category/B-Tree.md)
   - [BackTracking](./Algorithm/Category/BackTracking.md)
   - [BFS](./Algorithm/Category/BFS.md)
   - [Big-O](./Algorithm/Category/Big-O.md)
