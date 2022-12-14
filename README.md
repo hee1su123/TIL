@@ -44,6 +44,7 @@ Today I learned
   </details></blockquote>
 
   - [N-Queen](./Algorithm/N_Queen.md)
+  - [퀵정렬이 빠른 이유](./Algorithm/quick_vs_merge.md)
   - [트리 순회](./Algorithm/Tree_Traversal.md)
 </details>
 
