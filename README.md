@@ -142,6 +142,7 @@ Today I learned
   - [CORS](./Network/CORS.md)
   - [IPv4, IPv6](./Network/IPv4_IPv6.md)
   - [JWT](./Network/JWT.md)
+  - [TLS Handshake](./Network/TLS_handshake.md)
   - [Traffic Handling](./Network/Traffic_Handling.md)
   - [XSS & CSRF](./Network/XSS_CSRF.md)
 </details>
