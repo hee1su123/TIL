@@ -155,6 +155,7 @@ Today I learned
 
 <details><summary>Programming</summary>
 
+  - [Agile](./Programming/Agile.md)
   - [의존성](./Programming/Dependency.md)
   - [의존성 주입 DI](./Programming/DI.md)
   - [Framework vs Library](./Programming/Framework%26Library.md)
