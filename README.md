@@ -220,3 +220,7 @@ Today I learned
   - [Websocket and Jwt Authentication](./TroubleShooting/WebSocket_And_Security.md)
 </details>
  
+<details><summary>Web</summary>
+
+  - [WAS Web Application Server](./Web/WAS.md)
+</details>
