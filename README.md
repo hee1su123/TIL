@@ -126,6 +126,7 @@ Today I learned
   - [JSP Java Server Page](./Java/JSP.md)
   - [Lambda Expression](./Java/LambdaExpression.md)
   - [Stream](./Java/Stream.md)
+  - [Servlet](./Java/Servlet.md)
   - [super](./Java/super.md)
 </details>
 
