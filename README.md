@@ -127,6 +127,7 @@ Today I learned
   - [Lambda Expression](./Java/LambdaExpression.md)
   - [Stream](./Java/Stream.md)
   - [Servlet](./Java/Servlet.md)
+  - [Servlet Container](./Java/ServletContainer.md)
   - [super](./Java/super.md)
 </details>
 
@@ -223,4 +224,5 @@ Today I learned
 <details><summary>Web</summary>
 
   - [WAS Web Application Server](./Web/WAS.md)
+  - [Web Architecture](./Web/WebArchitecture.md)
 </details>
