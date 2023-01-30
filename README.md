@@ -123,6 +123,7 @@ Today I learned
 <details><summary>Java</summary>
 
   - [Interface Vs Abstract](./Java/InterfaceVsAbstract.md)
+  - [JDBC](./Java/JDBC.md)
   - [JSP Java Server Page](./Java/JSP.md)
   - [Lambda Expression](./Java/LambdaExpression.md)
   - [Stream](./Java/Stream.md)
