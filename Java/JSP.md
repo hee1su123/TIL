@@ -3,6 +3,7 @@
 - Server side 기술이다
 - Servlet 기술의 상위 버전이다
 - runtime 중 .jsp 파일은 Jsp Container(Servlet Container) 에 의해 Java Servlet (.java 파일)로 변환된 후 컴파일 된다
+- Template Engine 의 한 종류이다
 
 ## Servlet Container & Jsp Container
 - Jsp 컨테이너는 Servlet 컨테이너의 기능을 포함하고 있다
