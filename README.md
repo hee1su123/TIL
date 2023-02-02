@@ -219,6 +219,7 @@ Today I learned
   - [Stomp Disconnection sessionId](./TroubleShooting/Stomp_Disconnect.md)
   - [Test Code "Strict stubbing argument mismatch"](./TroubleShooting/Test_Strict_stubbing_argument_mismatch.md)
   - [VisualStudio 와 Boj 서버 차이](./TroubleShooting/VisualStudio_BOJ.md)
+  - [Vmmem의 과도한 메모리 점유](./TroubleShooting/Vmmem_high_memory.md)
   - [Websocket and Jwt Authentication](./TroubleShooting/WebSocket_And_Security.md)
 </details>
  
