@@ -199,6 +199,7 @@ Today I learned
   - [Mapping Entities to Dtos](./Spring/Mapping_Entity_to_Dto.md)
   - [Paging and Infinity Scroll](./Spring/Paging_and_Infinity_Scroll.md)
   - [Recursive Relation](./Spring/Recursive_Relation.md)
+  - [Spring Application Events](./Spring/Spring_Application_Event.md)
   - [Springboot](./Spring/Spring%26SpringBoot.md)
   - [Spring Container](./Spring/SpringContainer.md)
   - [Validation & Error](./Spring/Validation%26ErrorCheck.md)
