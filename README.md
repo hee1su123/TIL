@@ -58,7 +58,6 @@ Today I learned
 <details><summary>C++</summary>
 
   - [accumulate function](./C%2B%2B/accumulate.md)
-  - [assert](./C%2B%2B/assert.md)
   - [binary_search](./C%2B%2B/binary_search.md)
   - [comparator](./C%2B%2B/comparator.md)
   - [cout 소숫점 출력](./C%2B%2B/cout_%EC%86%8C%EC%88%98%EC%A0%90.md)
@@ -126,7 +125,6 @@ Today I learned
   - [JDBC](./Java/JDBC.md)
   - [JSP Java Server Page](./Java/JSP.md)
   - [Lambda Expression](./Java/LambdaExpression.md)
-  - [Stream](./Java/Stream.md)
   - [Servlet](./Java/Servlet.md)
   - [Servlet Container](./Java/ServletContainer.md)
   - [super](./Java/super.md)
@@ -195,31 +193,19 @@ Today I learned
   - [Spring Security Architecture](./Spring/SpringSecurity/SpringSecurityArchitecture.md)
   </details></blockquote>
 
+  - [Spring Framework 란 무엇인가](./Spring/00_Spring_Framework.md)
   - [AOP](./Spring/AOP.md)
-  - [Mapping Entities to Dtos](./Spring/Mapping_Entity_to_Dto.md)
-  - [Paging and Infinity Scroll](./Spring/Paging_and_Infinity_Scroll.md)
-  - [Recursive Relation](./Spring/Recursive_Relation.md)
   - [Spring Application Events](./Spring/Spring_Application_Event.md)
   - [Springboot](./Spring/Spring%26SpringBoot.md)
   - [Spring Container](./Spring/SpringContainer.md)
-  - [Validation & Error](./Spring/Validation%26ErrorCheck.md)
-  - [WebSocket Stomp](./Spring/WebSocket_Stomp.md)
 </details>
 
 <details><summary>TroubleShooting</summary>
 
   - [How To Update Board Files](./TroubleShooting/Board_File_Update.md)
-  - [Dto DI](./TroubleShooting/Dto_Dependency_Injection_Fail.md)
-  - [Jpa delte query not being executed](./TroubleShooting/JPA_Delete_Fail.md)
-  - [Jpa Infinity Loop](./TroubleShooting/JPA_Relation_Infinity_Loop.md)
-  - [Lazy Exception](./TroubleShooting/Lazy_Exception.md)
   - [Multiple Chat Message Error](./TroubleShooting/Multiple_Chat_Error.md)
-  - [Multiple Content Types in ResponseEntity\<ResponseDto\>](./TroubleShooting/Multiple_Content_Type_in_ResponseDto.md)
-  - [Recieving Form Data From Controller](./TroubleShooting/Receiving_Form_Data_From_Controller.md)
-  - [RequestDto Getters and Setters](./TroubleShooting/RequestDto_Getter_Setter.md)
   - [C++ sort 함수 compare 오류](./TroubleShooting/sort_compare.md)
   - [Stomp Disconnection sessionId](./TroubleShooting/Stomp_Disconnect.md)
-  - [Test Code "Strict stubbing argument mismatch"](./TroubleShooting/Test_Strict_stubbing_argument_mismatch.md)
   - [VisualStudio 와 Boj 서버 차이](./TroubleShooting/VisualStudio_BOJ.md)
   - [Vmmem의 과도한 메모리 점유](./TroubleShooting/Vmmem_high_memory.md)
   - [Websocket and Jwt Authentication](./TroubleShooting/WebSocket_And_Security.md)

@@ -27,7 +27,7 @@
 <details>
 <summary>Multi Process</summary>
 
-- 이거 너무 구글과 내용이 다른디....ㅅㅂ....
+- 구글링이랑 강의랑 내용에 차이가 조금 있음...다시 공부...
     - 동시성
     - 병렬성
 </details>
