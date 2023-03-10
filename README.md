@@ -111,6 +111,7 @@ Today I learned
   - [Builder](./GoF/Builder.md)
   - [Singletone](./Gof/Singletone.md)
   - [Strategy](./GoF/Strategy.md)
+  - [Template](./GoF/Template.md)
 </details>
 
 <details>
