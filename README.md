@@ -109,6 +109,7 @@ Today I learned
 
   - [Adapter](./GoF/Adapter.md)
   - [Builder](./GoF/Builder.md)
+  - [Factory Method](./GoF/Factory_Method.md)
   - [Singletone](./Gof/Singletone.md)
   - [Strategy](./GoF/Strategy.md)
   - [Template](./GoF/Template.md)
