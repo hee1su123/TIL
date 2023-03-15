@@ -130,6 +130,7 @@ Today I learned
   - [Servlet](./Java/Servlet.md)
   - [Servlet Container](./Java/ServletContainer.md)
   - [super](./Java/super.md)
+  - [Java 변수 종류](./Java/variables.md)
 </details>
 
 <details><summary>Network</summary>
