@@ -69,6 +69,7 @@ Today I learned
   - [substr function speed](./C%2B%2B/speed_substr.md)
   - [split function](./C%2B%2B/split.md)
   - [stringstream function](./C%2B%2B/stringstream.md)
+  - [2차원 벡터 초기화](./C%2B%2B/vector_resize.md)
 </details>
 
 <details><summary>Cloud</summary>
