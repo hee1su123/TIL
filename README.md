@@ -69,7 +69,7 @@ Today I learned
   - [substr function speed](./C%2B%2B/speed_substr.md)
   - [split function](./C%2B%2B/split.md)
   - [stringstream function](./C%2B%2B/stringstream.md)
-  - [2차원 벡터 초기화](./C%2B%2B/vector_resize.md)
+  - [2차원 벡터 초기화](./C%2B%2B/vector_initialize_again.md.md)
 </details>
 
 <details><summary>Cloud</summary>
@@ -210,6 +210,7 @@ Today I learned
   - [Multiple Chat Message Error](./TroubleShooting/Multiple_Chat_Error.md)
   - [C++ sort 함수 compare 오류](./TroubleShooting/sort_compare.md)
   - [Stomp Disconnection sessionId](./TroubleShooting/Stomp_Disconnect.md)
+  - [URL Encoding Decoding](./TroubleShooting/URL_ENCODING_DECODING.md)
   - [VisualStudio 와 Boj 서버 차이](./TroubleShooting/VisualStudio_BOJ.md)
   - [Vmmem의 과도한 메모리 점유](./TroubleShooting/Vmmem_high_memory.md)
   - [Websocket and Jwt Authentication](./TroubleShooting/WebSocket_And_Security.md)

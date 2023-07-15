@@ -1,6 +1,5 @@
 # vector 초기화 방법
 - 생성자
-- resize()
 - push_back()
 - 초기화 목록
 
@@ -12,20 +11,6 @@ int main() {
     cin >> N >> M >> num;
     
     vector<vector<int>> vec(N, vector<int>(M, num));
-
-    return 0;
-}
-```
-## resize() 함수
-```C++
-int main() {
-    int N, M, num;
-    
-    cin >> N >> M >> num;
-    
-    vector<vector<int>> vec;
-
-    vec.resize(N, vector<int>(M, num));
 
     return 0;
 }
