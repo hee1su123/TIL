@@ -218,6 +218,7 @@ Today I learned
  
 <details><summary>Web</summary>
 
+  - [Load Balancer](./Web/Load_Balancer.md)
   - [Template Engine](./Web/Template_Engine.md)
   - [WAS Web Application Server](./Web/WAS.md)
   - [Web Architecture](./Web/WebArchitecture.md)
