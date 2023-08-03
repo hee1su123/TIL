@@ -218,6 +218,7 @@ Today I learned
  
 <details><summary>Web</summary>
 
+  - [Feign Client](./Web/Feign_Client.md)
   - [Load Balancer](./Web/Load_Balancer.md)
   - [Template Engine](./Web/Template_Engine.md)
   - [WAS Web Application Server](./Web/WAS.md)
