@@ -125,6 +125,7 @@ Today I learned
 
 <details><summary>Java</summary>
 
+  - [Functional Interface](./Java/Functional_Interface.md)
   - [Interface Vs Abstract](./Java/InterfaceVsAbstract.md)
   - [JDBC](./Java/JDBC.md)
   - [JSP Java Server Page](./Java/JSP.md)
