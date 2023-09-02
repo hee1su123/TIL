@@ -125,6 +125,7 @@ Today I learned
 
 <details><summary>Java</summary>
 
+  - [Exception and Error](./Java/Exception.md)
   - [Functional Interface](./Java/Functional_Interface.md)
   - [Interface Vs Abstract](./Java/InterfaceVsAbstract.md)
   - [JDBC](./Java/JDBC.md)
