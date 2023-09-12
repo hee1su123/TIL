@@ -74,6 +74,7 @@ Today I learned
 
 <details><summary>Cloud</summary>
 
+  - [Bastion Host](./Cloud/Bastion_Host.md)
   - [Cloud](./Cloud/Cloud.md)
   - [Infrastructure as a Service](./Cloud/IaaS.md)
   - [Platform as a Service](./Cloud/PaaS.md)
