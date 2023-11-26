@@ -205,6 +205,7 @@ Today I learned
   - [Spring Framework 란 무엇인가](./Spring/00_Spring_Framework.md)
   - [AOP](./Spring/AOP.md)
   - [Spring Application Events](./Spring/Spring_Application_Event.md)
+  - [Spring MVC Architecture](./Spring/Spring_MVC_Architecture.md)
   - [Springboot](./Spring/Spring%26SpringBoot.md)
   - [Spring Container](./Spring/SpringContainer.md)
 </details>
