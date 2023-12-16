@@ -43,7 +43,6 @@ Today I learned
   - [피보나치 수열 구현](./Algorithm/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8.md/%ED%94%BC%EB%B3%B4%EB%82%98%EC%B9%98%EC%88%98%EC%97%B4.md)
   - [k진수 소수 구하기](./Algorithm/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98_%EC%98%A4%EB%8B%B5%EB%85%B8%ED%8A%B8.md/k%EC%A7%84%EC%88%98%EC%86%8C%EC%88%98%EA%B5%AC%ED%95%98%EA%B8%B0.md)
     </details></blockquote>
-
   - [N-Queen](./Algorithm/N_Queen.md)
   - [퀵정렬이 빠른 이유](./Algorithm/quick_vs_merge.md)
   - [트리 순회](./Algorithm/Tree_Traversal.md)
@@ -201,6 +200,7 @@ Today I learned
   - [Authentication & Authorization](./Spring/SpringSecurity/Authentication%26Authorization.md)
   - [Spring Security Architecture](./Spring/SpringSecurity/SpringSecurityArchitecture.md)
     </details></blockquote>
+  - [Spring AOP Proxy](./Spring/Spring_AOP_Proxy.md)
   - [Spring AOP](./Spring/Spring_Aop.md)
   - [Spring Framework 란 무엇인가](./Spring/00_Spring_Framework.md)
   - [Spring Application Events](./Spring/Spring_Application_Event.md)
