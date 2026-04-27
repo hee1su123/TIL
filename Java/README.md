@@ -996,3 +996,65 @@ SUB3에서 막힌다      → Jetty 서버 뼈대만 올리고 SUB4로 넘어가
   - 각 SUB에서 컴파일 가능 확인
 ```
 
+# SUB3/SUB4 큰 흐름
+
+## 1. 시작할 때 바로 쓸 것
+- `import` 먼저 작성
+- 전역 `Map` 3개 선언
+- `MODEL_AGENT_MAP`
+- `PREDICTED_MAP`
+- `ACTUAL_MAP`
+- `main()`에서 `loadModels()` 호출
+- `Jetty Server(8080)` 생성
+- `/monitoring`, `/performance` 두 개만 분기
+- `server.start()`
+- `server.join()`
+
+## 2. SUB3에서 해야 할 큰 일
+- `MODELS.JSON` 읽어서 모델별 agent 목록 저장
+- `/monitoring`은 받은 JSON을 저장
+- `dataType`이 `P`면 예측값 저장
+- `dataType`이 `A`면 실제값 저장
+- 저장 키는 `agentId + "#" + requestId`
+- 응답은 `200 OK`, body 없음
+
+## 3. /performance에서 할 일
+- 요청에서 `modelName`, `timeWindow` 꺼내기
+- `modelName`에 해당하는 agent 목록 찾기
+- `timeWindow` 범위 계산하기
+- 저장된 `P` 데이터 전체 순회
+- agent가 대상 모델인지 확인
+- 시간이 범위 안인지 확인
+- 같은 key의 `A` 데이터가 있는지 확인
+- 있으면 `total` 증가
+- `P.dataValue == A.dataValue`면 `correct` 증가
+- 결과 JSON 응답
+- `SUB3` 결과: `correct`, `total`
+
+## 4. SUB4에서 추가할 것
+- `SUB3` 코드 복사 후 시작
+- `P` 데이터에만 `latency`가 들어온다고 생각
+- `/monitoring` 검증에 `latency` 추가
+- `/performance`에서 `latencySum` 누적
+- 마지막에 평균 `latency` 계산
+- `SUB4` 결과: `correct`, `total`, `latency`
+
+## 5. 시험장에서 쓰는 순서
+1. 서버 뼈대 작성
+2. `loadModels()` 작성
+3. `readBody()` 같은 공통 유틸 작성
+4. `/monitoring` 완성
+5. `/performance` 완성
+6. `SUB3` 먼저 테스트
+7. `SUB3`를 `SUB4`로 복사
+8. `latency`만 추가
+
+## 6. 외워둘 체크포인트
+- Java 8 기준으로 작성
+- 상대경로 사용
+- `/monitoring` 응답 body 없음
+- 서버는 종료되면 안 됨
+- `POST /monitoring`
+- `POST /performance`
+- 불필요한 출력 하지 않기
+- `SUB4`는 결국 `SUB3 + latency`
