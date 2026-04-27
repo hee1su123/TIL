@@ -1,14 +1,8 @@
 package com.lgcns.test;
 
 import java.io.BufferedReader;
-import java.io.ByteArrayOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStream;
-import java.io.OutputStream;
-import java.net.ServerSocket;
-import java.net.Socket;
-import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -16,10 +10,16 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
 import com.google.gson.JsonArray;
 import com.google.gson.JsonElement;
 import com.google.gson.JsonObject;
 import com.google.gson.JsonParser;
+import org.eclipse.jetty.server.Request;
+import org.eclipse.jetty.server.Server;
+import org.eclipse.jetty.server.handler.AbstractHandler;
 
 public class RunManager {
 
@@ -33,18 +33,17 @@ public class RunManager {
     public static void main(String[] args) throws Exception {
         loadModels();
 
-        ServerSocket serverSocket = new ServerSocket(8080);
-        while (true) {
-            final Socket socket = serverSocket.accept();
-            socket.setSoTimeout(30000);
-
-            new Thread(new Runnable() {
-                @Override
-                public void run() {
-                    handleClient(socket);
-                }
-            }).start();
-        }
+        Server server = new Server(8080);
+        server.setHandler(new AbstractHandler() {
+            @Override
+            public void handle(String target, Request baseRequest,
+                    HttpServletRequest request, HttpServletResponse response) throws IOException {
+                route(target, request, response);
+                baseRequest.setHandled(true);
+            }
+        });
+        server.start();
+        server.join();
     }
 
     private static void loadModels() throws Exception {
@@ -67,134 +66,23 @@ public class RunManager {
         }
     }
 
-    private static void handleClient(Socket socket) {
-        try {
-            while (true) {
-                HttpRequest request = readRequest(socket);
-                if (request == null) {
-                    break;
-                }
-
-                if ("POST".equalsIgnoreCase(request.method) && "/monitoring".equals(request.path)) {
-                    handleMonitoring(socket, request.body);
-                } else if ("POST".equalsIgnoreCase(request.method) && "/performance".equals(request.path)) {
-                    handlePerformance(socket, request.body);
-                } else {
-                    writeEmptyResponse(socket, 404, "Not Found");
-                }
-
-                if ("close".equalsIgnoreCase(request.connection)) {
-                    break;
-                }
-            }
-        } catch (IOException ignored) {
-        } finally {
-            try {
-                socket.close();
-            } catch (IOException ignored) {
-            }
+    private static void route(String target, HttpServletRequest request, HttpServletResponse response)
+            throws IOException {
+        if ("POST".equalsIgnoreCase(request.getMethod()) && "/monitoring".equals(target)) {
+            handleMonitoring(request, response);
+        } else if ("POST".equalsIgnoreCase(request.getMethod()) && "/performance".equals(target)) {
+            handlePerformance(request, response);
+        } else {
+            writeEmptyResponse(response, HttpServletResponse.SC_NOT_FOUND);
         }
     }
 
-    private static HttpRequest readRequest(Socket socket) throws IOException {
-        InputStream inputStream = socket.getInputStream();
-        OutputStream outputStream = socket.getOutputStream();
-
-        String headerText = readHeaderText(inputStream);
-        if (headerText == null || headerText.isEmpty()) {
-            return null;
-        }
-
-        String[] lines = headerText.split("\r\n");
-        if (lines.length == 0) {
-            return null;
-        }
-
-        String[] requestLine = lines[0].split(" ");
-        if (requestLine.length < 2) {
-            return null;
-        }
-
-        Map<String, String> headers = new HashMap<String, String>();
-        for (int i = 1; i < lines.length; i++) {
-            String line = lines[i];
-            int delimiter = line.indexOf(':');
-            if (delimiter < 0) {
-                continue;
-            }
-
-            String name = line.substring(0, delimiter).trim().toLowerCase();
-            String value = line.substring(delimiter + 1).trim();
-            headers.put(name, value);
-        }
-
-        if ("100-continue".equalsIgnoreCase(headers.get("expect"))) {
-            outputStream.write("HTTP/1.1 100 Continue\r\n\r\n".getBytes(StandardCharsets.ISO_8859_1));
-            outputStream.flush();
-        }
-
-        int contentLength = parseInt(headers.get("content-length"));
-        byte[] bodyBytes = readExact(inputStream, contentLength);
-        String body = new String(bodyBytes, StandardCharsets.UTF_8);
-
-        return new HttpRequest(requestLine[0], requestLine[1], body, headers.get("connection"));
-    }
-
-    private static String readHeaderText(InputStream inputStream) throws IOException {
-        ByteArrayOutputStream buffer = new ByteArrayOutputStream();
-        int matched = 0;
-        int current;
-
-        while ((current = inputStream.read()) != -1) {
-            buffer.write(current);
-
-            if ((matched == 0 && current == '\r')
-                || (matched == 1 && current == '\n')
-                || (matched == 2 && current == '\r')
-                || (matched == 3 && current == '\n')) {
-                matched++;
-                if (matched == 4) {
-                    return new String(buffer.toByteArray(), StandardCharsets.ISO_8859_1);
-                }
-            } else {
-                matched = current == '\r' ? 1 : 0;
-            }
-        }
-
-        if (buffer.size() == 0) {
-            return null;
-        }
-        return new String(buffer.toByteArray(), StandardCharsets.ISO_8859_1);
-    }
-
-    private static byte[] readExact(InputStream inputStream, int contentLength) throws IOException {
-        if (contentLength <= 0) {
-            return new byte[0];
-        }
-
-        byte[] body = new byte[contentLength];
-        int offset = 0;
-        while (offset < contentLength) {
-            int readCount = inputStream.read(body, offset, contentLength - offset);
-            if (readCount < 0) {
-                break;
-            }
-            offset += readCount;
-        }
-
-        if (offset == contentLength) {
-            return body;
-        }
-
-        byte[] exactBody = new byte[offset];
-        System.arraycopy(body, 0, exactBody, 0, offset);
-        return exactBody;
-    }
-
-    private static void handleMonitoring(Socket socket, String body) throws IOException {
+    private static void handleMonitoring(HttpServletRequest request, HttpServletResponse response)
+            throws IOException {
+        String body = readBody(request);
         JsonObject data = JsonParser.parseString(body).getAsJsonObject();
         if (!isValidMonitoring(data)) {
-            writeEmptyResponse(socket, 400, "Bad Request");
+            writeEmptyResponse(response, HttpServletResponse.SC_BAD_REQUEST);
             return;
         }
 
@@ -206,15 +94,17 @@ public class RunManager {
         data.addProperty("dataType", dataType);
 
         saveMonitoring(agentId, requestId, dataType, data);
-        writeEmptyResponse(socket, 200, "OK");
+        writeEmptyResponse(response, HttpServletResponse.SC_OK);
     }
 
-    private static void handlePerformance(Socket socket, String body) throws IOException {
+    private static void handlePerformance(HttpServletRequest request, HttpServletResponse response)
+            throws IOException {
+        String body = readBody(request);
         JsonObject req = JsonParser.parseString(body).getAsJsonObject();
         String modelName = getTrimmedString(req, "modelName");
         String timeWindow = getTrimmedString(req, "timeWindow");
         JsonObject result = calculatePerformance(modelName, timeWindow);
-        writeJsonResponse(socket, result.toString());
+        writeJsonResponse(response, result.toString());
     }
 
     private static synchronized void saveMonitoring(String agentId, String requestId,
@@ -275,29 +165,26 @@ public class RunManager {
         return result;
     }
 
-    private static void writeEmptyResponse(Socket socket, int statusCode, String reason) throws IOException {
-        OutputStream outputStream = socket.getOutputStream();
-        String response =
-            "HTTP/1.1 " + statusCode + " " + reason + "\r\n"
-                + "Content-Length: 0\r\n"
-                + "Connection: Keep-Alive\r\n"
-                + "\r\n";
-        outputStream.write(response.getBytes(StandardCharsets.ISO_8859_1));
-        outputStream.flush();
+    private static String readBody(HttpServletRequest request) throws IOException {
+        BufferedReader br = request.getReader();
+        StringBuilder sb = new StringBuilder();
+        String line;
+        while ((line = br.readLine()) != null) {
+            sb.append(line);
+        }
+        return sb.toString();
     }
 
-    private static void writeJsonResponse(Socket socket, String body) throws IOException {
-        byte[] bodyBytes = body.getBytes(StandardCharsets.UTF_8);
-        OutputStream outputStream = socket.getOutputStream();
-        String response =
-            "HTTP/1.1 200 OK\r\n"
-                + "Content-Type: application/json\r\n"
-                + "Content-Length: " + bodyBytes.length + "\r\n"
-                + "Connection: Keep-Alive\r\n"
-                + "\r\n";
-        outputStream.write(response.getBytes(StandardCharsets.ISO_8859_1));
-        outputStream.write(bodyBytes);
-        outputStream.flush();
+    private static void writeEmptyResponse(HttpServletResponse response, int statusCode) {
+        response.setStatus(statusCode);
+        response.setContentLength(0);
+    }
+
+    private static void writeJsonResponse(HttpServletResponse response, String body) throws IOException {
+        response.setStatus(HttpServletResponse.SC_OK);
+        response.setContentType("application/json");
+        response.setCharacterEncoding("UTF-8");
+        response.getWriter().write(body);
     }
 
     private static String buildKey(String agentId, String requestId) {
@@ -327,24 +214,4 @@ public class RunManager {
         return !"P".equals(dataType) || data.has("latency");
     }
 
-    private static int parseInt(String value) {
-        if (value == null || value.trim().isEmpty()) {
-            return 0;
-        }
-        return Integer.parseInt(value.trim());
-    }
-
-    private static final class HttpRequest {
-        private final String method;
-        private final String path;
-        private final String body;
-        private final String connection;
-
-        private HttpRequest(String method, String path, String body, String connection) {
-            this.method = method;
-            this.path = path;
-            this.body = body;
-            this.connection = connection;
-        }
-    }
 }
